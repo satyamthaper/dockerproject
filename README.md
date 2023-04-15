@@ -1,4 +1,4 @@
--dockerprojects
+$dockerprojects
 
 -nodejs docker project
 
