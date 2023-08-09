@@ -1,0 +1,23 @@
+FROM - specifies the base image to use for the Docker image. Syntax: FROM <image>[:<tag>].
+
+ENV - sets environment variables for the container. Syntax: ENV <key> <value>.
+
+WORKDIR - sets the working directory for the container. Syntax: WORKDIR /path/to/directory.
+
+COPY - copies files or directories from the host machine to the container. Syntax: COPY <src> <dest>.
+
+ADD - similar to COPY, but can also download files from URLs and extract archives. Syntax: ADD <src> <dest>.
+
+RUN - runs a command in the container during build time. Syntax: RUN <command>.
+
+CMD - specifies the command to run when the container is started. Syntax: CMD ["<command>", "<arg1>", "<arg2>"].
+
+ENTRYPOINT - specifies the entry point for the container, i.e., the command that is always executed when the container is started. Syntax: ENTRYPOINT ["<command>", "<arg1>", "<arg2>"].
+
+EXPOSE - exposes a port to the outside world. Syntax: EXPOSE <port>.
+
+VOLUME - creates a mount point for a volume to be used by the container. Syntax: VOLUME /path/to/volume.
+
+USER - sets the user ID or name for the container. Syntax: USER <user>[:<group>].
+
+ARG - defines a build-time argument that can be passed to the docker build command. Syntax: ARG <name>[=<default>].
